@@ -12,14 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->id()->primary();
+            $table->id();
             $table->string('property_name');
-            $table->string('property_price');
-            $table->string('property_location');
-            $table->string('property_image');
-            $table->string('property_description');
-            $table->string('property_type');
-            $table->string('property_status');
+            $table->string('property_email');
+            $table->string('property_number');
+            $table->string('property_date');
+            $table->string('property_time');
+            $table->string('property_service');
+            $table->string('property_message');
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\bookingcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,6 +78,10 @@ Route::get('/contact', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/redirect', [App\Http\Controllers\HomeController::class, 'redirect']);
+
+
+route::resource('book', bookingcontroller::class);
 
 // User routes
 // Route::get('login', [UserController::class, 'showLoginForm'])->name('login');

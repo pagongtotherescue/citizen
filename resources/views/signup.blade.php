@@ -81,6 +81,12 @@
                         <x-input id="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="password" name="password" required autocomplete="new-password"/>
                     </div>
 
+                    <div>
+                        <label for="password_confirmation" class="block mb-2 text-sm text-gray-600" value="{{ __('Confirm Password') }}">{{ __('Confirm Password') }}</label>
+                <x-input id="password_confirmation" placeholder="Confirm password" class="block mt-1 w-full" type="password" name="password_confirmation" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"   required autocomplete="new-password" />
+                    </div>
+
+
                     <button
                         class="flex items-center justify-between w-full px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                         <span>Sign Up </span>

@@ -6,7 +6,14 @@
                 </a>
                 <div class="flex items-center lg:order-2">
                     <div class="">
-                        <x-app-layout></x-app-layout>
+                        <form method="POST" action="{{ route('logout') }}" x-data>
+                                @csrf
+
+                                <a href="{{ route('logout') }}"
+                                         @click.prevent="$root.submit();">
+                                    {{ __('Log Out') }}
+                                </a>
+                            </form>
                     </div>
                     <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -26,7 +33,7 @@
                             <a href="/map" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white lg:dark:hover:bg-transparent">Show Map</a>
                         </li>
                         <li>
-                            <a href="/book" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white lg:dark:hover:bg-transparent">Book Now</a>
+                            <a href="{{route('book.create')}}" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white lg:dark:hover:bg-transparent">Book Now</a>
                         </li>
                         <li>
                             <a href="/about" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white lg:dark:hover:bg-transparent">Team</a>
