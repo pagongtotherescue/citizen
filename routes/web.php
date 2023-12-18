@@ -15,8 +15,8 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/home', function () {
-    return view('');
+Route::get('/', function () {
+    return view('home');
 });
 
 Route::get('/dashboard', function () {
@@ -79,13 +79,14 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // User routes
-Route::get('login', [UserController::class, 'showLoginForm'])->name('login');
-Route::post('login', [UserController::class, 'login']);
-Route::post('logout', [UserController::class, 'logout'])->name('logout');
-Route::post('/signup', [UserController::class, 'register']);
+// Route::get('login', [UserController::class, 'showLoginForm'])->name('login');
+// Route::post('login', [UserController::class, 'login']);
+// Route::post('logout', [UserController::class, 'logout'])->name('logout');
+// Route::post('/signup', [UserController::class, 'register']);
+// Route::get('/logout', 'AuthController@logout');
 
 // Admin routes
-Route::get('admin/login', 'AdminController@showLoginForm')->name('admin.login');
-Route::post('admin/login', 'AdminController@login');
-Route::post('admin/logout', 'AdminController@logout')->name('admin.logout');
-Route::post('/adminsignup', [AdminController::class, 'register']);
+// Route::get('admin/login', 'AdminController@showLoginForm')->name('admin.login');
+// Route::post('admin/login', 'AdminController@login');
+// Route::post('admin/logout', 'AdminController@logout')->name('admin.logout');
+// // Route::post('/adminsignup', [AdminController::class, 'register']);

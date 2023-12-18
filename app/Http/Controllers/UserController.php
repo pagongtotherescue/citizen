@@ -33,18 +33,18 @@ class UserController extends Controller
         return redirect()->route('dashboard');
     }
 
-    public function login(Request $request)
-{
+//     public function login(Request $request)
+// {
 
-    if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-        dd(Auth::id()); 
-        return redirect()->intended('dashboard');
-    } else {
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
-    }
-}
+//     if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+//         dd(Auth::id()); 
+//         return redirect()->intended('dashboard');
+//     } else {
+//         return back()->withErrors([
+//             'email' => 'The provided credentials do not match our records.',
+//         ]);
+//     }
+// }
 
     public function logout()
     {
