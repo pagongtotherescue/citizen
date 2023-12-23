@@ -82,7 +82,7 @@ Route::get('/redirect', [App\Http\Controllers\HomeController::class, 'redirect']
 
 
 route::resource('book', bookingcontroller::class);
-
+Route::get('/book/view/{id}', [bookingcontroller::class, 'view'])->name('book.view');
 // User routes
 // Route::get('login', [UserController::class, 'showLoginForm'])->name('login');
 // Route::post('login', [UserController::class, 'login']);

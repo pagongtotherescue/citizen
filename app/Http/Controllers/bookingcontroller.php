@@ -92,4 +92,10 @@ class bookingcontroller extends Controller
         $booking->delete();
     return redirect()->back();
     }
+
+    public function view($id)
+{
+    $bookings = Booking::find($id);
+    return view('view', compact('bookings'));
+}
 }

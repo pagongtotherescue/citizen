@@ -2,8 +2,8 @@
 @section('content')
 
 
-<div class="flex flex-end">
-    <a href="{{ Route('book.index')}}" class="">View All</a>
+<div class="flex my-4">
+    <a href="{{ Route('book.index')}}" class="px-4 py-2 ml-4 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">View All Appointments</a>
 </div>
 <div class="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
     <div class="text-2xl py-4 px-6 bg-gray-900 text-white text-center font-bold uppercase">
