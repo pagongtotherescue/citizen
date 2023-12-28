@@ -1,3 +1,48 @@
+Hi ma'am!
+
+In order to make this project work here are the things you need to do/follow:
+
+npm run dev
+php artisan serve
+
+if wala po try po optimizing it
+php artisan optimize
+
+
+
+PS.
+I'm sorry po if hanggang dito lang po muna yung kaya ko ma'am. 
+I feel unmotivated these past few days(actually po last last month pa), maybe because Christmas is just around the corner and i'm not having any of it. 
+This is very unsual of me but I will practice again until I fully understand how laravel works. 
+I got so overwhelmed by the amount of work that needs to be done. 
+I feel ashamed and I feel dumb because I know only a little of it. I only got a little time to pull my grades in the depths of hell but I'm hoping you will consider this.
+I hope this project will make a little sense.
+Again, I'm sorry for being a pain in the a**. 
+
+Thank you po and Merry Christmas ma'am.
+
+
+////////////////////////////////////////
+MERRY CHRISTMAS AND HAPPY NEW YEAR!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
