@@ -11,6 +11,11 @@ class Admin extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function user()
+    {
+        return $this->morphOne(User::class, 'userable');
+    }
+
     /**
      * The attributes that are mass assignable.
      *

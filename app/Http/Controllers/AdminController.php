@@ -27,4 +27,13 @@ class AdminController extends Controller
 
         return redirect()->route('admin');
     }
+
+    public function show($id)
+    {
+        $admin = Admin::find($id);
+        $user = $admin->user;
+
+        // Now you can pass $admin and $user to your view
+        return view('admin.show', ['admin' => $admin, 'user' => $user]);
+    }
 }
